@@ -1,0 +1,161 @@
+/*
+ * fullPage.js | flatCore Theme
+ * CflatCore Theme by Patrick Konstandin
+ * fullPage.js by Alvaro Trigo
+ */
+
+@import '../../node_modules/fullpage.js/dist/fullpage';
+
+
+$text_color: #fff;
+$link_color: #fff;
+$link_background: #36c;
+
+$header_bg: rgba(0,0,0,0.5);
+$nav_color: #fff;
+$nav_bg: #222;
+
+$bg_dark: #222;
+$bg_blue: #002d68;
+$bg_maroon: #800000;
+$bg_orange: #FFA500;
+$bg_olive: #808000;
+$bg_purple: #800080;
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	color: $text_color;
+}
+
+/**
+ * header and navigation
+ */
+
+#header {
+	position:fixed;
+	top: 0;
+	height: 50px;
+	display:block;
+	width: 100%;
+	background: $header_bg;
+	z-index:9;
+	color: #eee;
+	padding: 5px 0 0 0;
+	text-align: center;
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline;
+			float: left;
+			a {
+				display:inline-block;
+				margin: 0 3px;
+				padding: 10px 20px;
+				font-size: 20px;
+				line-height: 20px;
+				color: $nav_color;
+				background: $nav_bg;
+				border: 1px solid darken($nav_bg,10);
+				border-radius: 5px;
+				text-decoration: none;
+				&:hover {
+					background: darken($nav_bg,10);
+				}
+			}
+		}
+		li.sub {
+			float: right;
+			a {
+				font-size: 15px;
+				line-height: 15px;
+				padding: 5px 10px;
+				margin-top: 10px;
+				background: transparent;
+				border-color: rgba($nav_color,0.5);
+			}
+		}
+	}
+	
+}
+
+/**
+ * sections and slides 
+ */
+
+.section:nth-child(odd),
+.slide:nth-child(odd) {
+  background-color: $bg_dark;
+  &.bg-blue {
+	  background: $bg_blue;
+  }
+  &.bg-maroon {
+	  background: $bg_maroon;
+  }
+}
+
+.section:nth-child(even),
+.slide:nth-child(even) {
+  background-color: lighten($bg_dark,15);
+  &.bg-blue {
+	  background-color: #002d68;
+  }
+  &.bg-maroon {
+	  background-color: #800000;
+  }
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+	background: #fff;
+}
+
+.section {
+	padding: 0;
+	margin: 0;
+	
+	background-size: cover;
+	
+	.section-inner {
+		text-align: center;
+		background-size: cover;
+		font-size: 28px;
+		
+		text-shadow:
+		0 0 5px rgba(0,0,0,1),
+    0 0 7px rgba(0,0,0,1),
+    0 0 10px rgba(0,0,0,1),
+    0 0 21px rgba(0,0,0,0.8);
+		
+		h1,h2 {
+			font-size: 68px;
+			margin-bottom: 0;			
+		}
+		
+		a {
+			color:$link_color;
+			background: $link_background;
+			text-decoration: none;
+			padding: 5px 10px;
+			border-radius: 5px;
+			text-shadow: none;
+			&:hover {
+				background: darken($link_background,10);
+			}
+		}
+		
+	}
+}
+
+.slide {
+	background-size: cover;
+}
+
+/* pull the nav dots a little bit to the top */
+
+#fp-nav {
+	top: 25%;
+}

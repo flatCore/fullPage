@@ -1,0 +1,12 @@
+<?xml version='1.0' standalone='yes'?>
+<theme>
+	<name>fullPage</name>
+	<version>1.0</version>
+	<license>GNU General Public License</license>
+	<author>flatCore Dev Team</author>
+	<author_url>https://www.flatcore.org</author_url>
+	<requires>
+		<core type="min">2.0</core>
+		<core type="max"></core>
+	</requires>
+</theme>
