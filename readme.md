@@ -6,7 +6,7 @@ https://github.com/alvarotrigo/fullPage.js
 
 ## How it works
 
-Upload the fullPage directory in your Themes folder.
+Upload the fullPage directory in your Themes folder. At this point there is no drag & drop installation. You will probably adjust the CSS anyway, so that doesn't make any sense either. You have to install the theme via (S)FTP.
 
 ![snippets](https://user-images.githubusercontent.com/5982156/127913012-947191da-0352-4ebd-a711-263dd65902de.png)
 All the Sections and Slides must be saved as Snippets. Create a label to be able to assign the sections and slides. In this example it's `fullPage`
@@ -16,10 +16,10 @@ Use the field Keywords to create a Section or Slide.
 
 | Keyword | |
 |---------|----|
-| section | creates a slide |
+| section | creates a section |
 | slide slide2 | creates a slide in the second section |
 
-All Sections and Slides will be sorted by the field Priority
+All Sections and Slides will be sorted by the field _Priority
 
 Create a new Page, choose fullPage - layout_default.tpl as Specific Template
 
