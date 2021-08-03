@@ -19,8 +19,9 @@ Use the field Keywords to create a Section or Slide.
 | section | creates a section |
 | slide slide2 | creates a slide in the second section |
 
-All Sections and Slides will be sorted by the field _Priority
+All Sections and Slides will be sorted by the field __Priority__
 
+![page](https://user-images.githubusercontent.com/5982156/128049373-077dd5f0-c99b-4b1a-8fb7-e292563ff96a.png)
 Create a new Page, choose fullPage - layout_default.tpl as Specific Template
 
 Include your Sections and Slides via Shortcode `[fullPage=yourLabel]`
@@ -39,3 +40,10 @@ If you want to use fullPage to develop non open sourced sites, themes, projects,
 #### Open source license
 You can use fullPage.js for your Open Source Project under the terms of the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html).
 
+### Questions? Suggestions? Ideas?
+
+Please use the discussion function in our main repository on GitHub: https://github.com/flatCore/flatCore-CMS/discussions
+
+### Contribution
+
+You are very welcome to take part in this project. We are happy for every contribution!
